@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="bg-secondary">
+    <div id="app">
         <b-container class="vh-100 bg-secondary">
             <b-row class="bg-secondary">
                 <b-col class="p-4">
@@ -19,6 +19,10 @@
                             <h4>Доступ и идентификация</h4>
                             Система доступна всем пользователям интернета по номеру телефона,
                             зарегистрированного в Российской Федерации.
+                        </b-list-group-item>
+                        <b-list-group-item>
+                            <h4>Источник опросов</h4>
+                            Все опросы создаются пользователями системы.
                         </b-list-group-item>
                         <b-list-group-item>
                             <h4>Изменение данных</h4>
@@ -64,6 +68,10 @@
 <style lang="scss">
     @import './assets/styles/theme.scss';
     @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+    body {
+        background-color: $secondary;
+    }
 
     #app {
         font-family: 'Montserrat', sans-serif;
