@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <b-container class="vh-100 bg-secondary">
-            <b-row class="bg-secondary">
+        <b-container class="vh-100">
+            <b-row class="bg-info">
                 <b-col class="p-4">
                     <img alt="Флаг Российской Федерации" id="flag" class="pb-3"
                          src="./assets/images/flag.svg"/>
