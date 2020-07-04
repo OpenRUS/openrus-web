@@ -47,7 +47,7 @@
                     <p>Мы рады услышать Ваше мнение и заинтересованы в любого рода помощи и поддержке.</p>
                     <p>
                         Со всеми вопросами и предложениями пишите на
-                        <a href="mailto://info@openrus.net">info@openrus.net</a>
+                        <a href="mailto:info@openrus.net">info@openrus.net</a>
                     </p>
                 </b-col>
             </b-row>
