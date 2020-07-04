@@ -1,28 +1,79 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app" class="bg-secondary">
+        <b-container class="vh-100 bg-secondary">
+            <b-row class="bg-secondary">
+                <b-col class="p-4">
+                    <img alt="Флаг Российской Федерации" id="flag" class="pb-3"
+                         src="./assets/images/flag.svg"/>
+                    <h1><b>OpenRUS</b></h1>
+                    <h2>Открытая система голосования граждан Российской Федерации</h2>
+                </b-col>
+            </b-row>
+            <b-row class="bg-dark">
+                <b-col class="p-4">
+                    <p class="text-white">
+                        <b>Мы занимаемся разработкой системы со следующими характеристиками:</b>
+                    </p>
+                    <b-list-group>
+                        <b-list-group-item>
+                            <h4>Доступ и идентификация</h4>
+                            Система доступна всем пользователям интернета по номеру телефона,
+                            зарегистрированного в Российской Федерации.
+                        </b-list-group-item>
+                        <b-list-group-item>
+                            <h4>Изменение данных</h4>
+                            Система предоставляет возможность изменить своё решение по каждому вопросу.
+                            Чтобы ограничить злоупотребление системы, после каждого изменения увеличивается
+                            задержка перед следующим возможным изменением.
+                        </b-list-group-item>
+                        <b-list-group-item>
+                            <h4>Достоверность данных</h4>
+                            Мы гарантируем достоверность данных путём децентрализации и использования технологии
+                            Blockchain.
+                            Данные должны храниться и валидироваться на независимых серверах, которые может
+                            установить любой желающий.
+                        </b-list-group-item>
+                        <b-list-group-item>
+                            <h4>Открытость системы</h4>
+                            Весь код системы является открытым и доступен всем желающим:
+                            <br>
+                            <a href="https://github.com/OpenRUS" target="_blank">https://github.com/OpenRUS</a>
+                        </b-list-group-item>
+                    </b-list-group>
+                </b-col>
+            </b-row>
+            <b-row class="bg-secondary">
+                <b-col class="p-4 text-white">
+                    <p>Мы рады услышать Ваше мнение и заинтересованы в любого рода помощи и поддержке.</p>
+                    <p>
+                        Со всеми вопросами и предложениями пишите на
+                        <a href="mailto://info@openrus.net">info@openrus.net</a>
+                    </p>
+                </b-col>
+            </b-row>
+        </b-container>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App'
+    }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+    @import './assets/styles/theme.scss';
+    @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+    #app {
+        font-family: 'Montserrat', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+    }
+
+    #flag {
+        height: 100px;
+        box-sizing: content-box;
+    }
 </style>
